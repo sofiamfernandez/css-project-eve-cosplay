@@ -1,0 +1,533 @@
+/*
+Style CSS Name: COSPLAY
+Author: Sofía M. Fernández
+Author URI: https:/www.sofiamfernandez.com
+Description: Desarrollo web y diseño para Eve Cosplay. Todos los derechos reservados.
+Prohibida su reproducción.
+Versión: 1.0
+*/ 
+
+
+@font-face{
+  font-family: "comix";
+  src: url("fonts/comix.ttf");
+}
+@font-face{
+  font-family: "simple";
+  src: url("fonts/simple.ttf");
+}
+@font-face{
+  font-family: "antipasto";
+  src: url("fonts/antipasto.ttf");
+}
+
+body {
+  font-family: 'Lora';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.5))), url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/*h1:hover,
+h2:hover {
+    text-shadow: 2px 2px 2px #F4EAC7;
+ }*/
+
+.cabecera {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.cabecera{
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/*logo*/
+h1 #logo {
+  font-family:"comix";
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+#logo{
+  text-decoration: none;
+  color: white;
+  transition: color 700ms;
+   
+}
+#logo:hover{
+  background: transparent;
+  color: black;
+  text-shadow: 2px 2px 2px #ffff;
+  }
+
+.cabecera {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+ }
+
+.cabecera {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.cabecera {
+  display: block;
+  font-size: 1rem;
+  font-weight: 90;
+  font-family: 'comix';
+}
+ /*ESTILOS DEL NAV*/ 
+
+#mainNav {
+  background:rgba(53, 103, 164, 0.5);
+  font-family: 'Raleway';
+}
+
+#mainNav .navbar-brand {
+  color:#d5bde9;
+  transition: color 700ms;
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  /* margin-left: 15px; */
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+  transition: color 500ms, transform 500ms;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(255, 255, 255, 0.3);
+  transform:scale(1.50,1.50);
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color:#d5bde9;
+  }
+#mainNav > div > a {
+  font-family: 'comix';
+  color: white;
+}
+
+#mainNav > div > a:hover {
+  background: transparent;
+  color: black;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.4);
+    
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color:#d5bde9;
+  }
+}
+
+/*ESTILOS SECTION 1 HOME*/ 
+
+.background-title {
+  background:rgba(53, 103, 164, 0.5);
+}
+
+.titulo-cosplay {
+  font-family: 'comix';
+  color: aliceblue;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.titulo {
+  font-family: 'comix';
+  text-shadow: 2px 2px 2px #ffff;
+/*  font-size: 1.1rem;*/
+}
+
+.line {
+  position: relative;
+  top: 50%;
+  width: 20em;
+  margin: 0 auto;
+  font-family: 'antipasto';
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translateY(-50%); */
+}
+
+/*Animation*/
+.anim-typewriter {
+  animation: typewriter 4s steps(43) 1s 1 normal both,
+  blinkTextCursor 500ms steps(43) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+        width: 0;
+  }
+  to {
+        width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
+}
+
+.firma {
+  color:#d5bde9;
+}
+.firma:hover {
+  color:#d5bde9;
+}
+.firma:focus {
+  color:white;
+}
+.btn-xl {
+  padding: 15px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: 'comix';
+  text-transform: uppercase;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro-text {
+  background-color: rgba(213,189,233, 0.8);
+}
+.intro-text-grupales {
+  background-color: rgba( 0, 171, 189, 0.8);
+}
+
+
+.img-png {
+    width: 300px;
+    position: absolute;
+    right: -200px;
+    bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+/*ESTILOS MIS COSPLAYS*/
+
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+.list-hours {
+  font-size: 0.9rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+  font-weight: bold;
+  color: #e6a756;
+}
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: rgba(53, 103, 164, 0.5);
+}
+
+.text-primary {
+  color: #e6a756 !important;
+}
+
+.bg-primary {
+  background-color: #e6a756 !important;
+}
+
+.btn {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+}
+
+.btn-primary {
+  background-color:  #334c6b;
+  border-color: #334c6b;
+  transition: all 700ms;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color:#aa034f;
+  border-color: #aa034f;
+  -webkit-box-shadow: 0px 1px 22px -5px rgba(0,0,0,0.75);
+ -moz-box-shadow: 0px 1px 22px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 22px -5px rgba(0,0,0,0.75);
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
+/*FOOTER*/ 
+.seguime {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 800;
+  }
+.cop {
+  color: lavender;
+}
+/*BOTÓN SUBIR*/
+
+.simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+.icono {
+  font-size: 30px;
+ color: #d5bde9;
+}
+@media (max-width: 768px) {
+.titulo,
+.titulo-cosplay {
+  font-size: 1rem;
+}
+
+.line {
+  display: none !important;
+}
+.galeria {
+  display: none !important;
+}
+.img-png {
+  display: none !important;
+}
+
+.carousel-centrado {
+  text-align: center !important;
+}
+}
+
+
+/*ESTILOS GALERÍA*/
+img{ max-width:100%;}
+
+.gallery_box li{ 
+  width:33.333333%; 
+  max-width: 100% ; 
+  display:inline-block; 
+  float: left; 
+  text-align: center; 
+  overflow: hidden;    
+  position: relative;
+}
+.gallery_box{ 
+  padding:0;
+  display: flow-root;
+}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{
+  -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+  }
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ 
+  background:rgba(0,0,0,0.17);
+   }
+.gallery_box li:nth-child(even) .box_data{ 
+/*  background:rgba(0,44,255,0.27);*/
+   }
+.gallery_box .box_data{ 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  right:0; 
+  bottom:0; 
+  color:#fff;
+}
+/*.gallery_box .box_data span{ 
+  position:absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  left:0 ; 
+  right:0; 
+  font-size:24px;
+}*/
+.gallery_box li:hover .box_data{ 
+  background:rgba(170,3,79,0.2);
+}
+
+.container-fluid,
+.row {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.background-comic {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 225, 225, 0.5))), url("../img/fondo-comic.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-grupales {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 225, 225, 0.5))), url("../img/fondo-grupales.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.background-about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 225, 225, 0.5))), url("../img/fondo-sobre-mi.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/*Redes*/
+
+.redes {
+  text-decoration: none;
+  color: #d5bde9;
+  transition: color 500ms, transform 500ms;
+}
+.redes:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform:scale(1.50,1.50);
+  text-decoration: none !important;
+}
+
+/*REDES FOOTER*/
+
+.fab {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.fab:hover {
+    opacity: 0.7;
+    text-decoration: none;
+
